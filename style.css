@@ -1,0 +1,511 @@
+* {　
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url(water.jpg) ;
+     background-repeat: no-repeat;
+    background-size: cover;
+     font-family: 'Shadows Into Light', cursive;
+}
+
+.container {
+    width: 960px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#header {
+    width: 100%;
+    overflow: hidden;
+    background: #0073D2;
+    padding: 6px 0px;
+    /*    つけたし*/
+    position: fixed;
+    z-index: 2;
+    /*    つけたし*/
+}
+
+#header h1 {
+    float: left;
+    color: #f9f9f9;
+    margin-right: 48px;
+    font-family: 'Indie Flower', cursive;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+    margin-top: 2px;
+}
+
+nav h1 {
+    font-size: 32px;
+    padding: 8px 16px;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 1px #000;
+}
+
+nav a {
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    color: #f9f9f9;
+    margin: 14px 16px 0px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #f9f9f9;
+}
+
+.hero-img {
+    width: 100%;
+    height: 400px;
+    background: #fff url(hero.jpg) 0 0 no-repeat;
+    background-size: cover;
+    margin-bottom: 32px;
+    /*    つけたし*/
+    padding-top: 60px;
+    /*    つけたし*/
+}
+
+#main {
+    width: 608px;
+    float: left;
+    background: #000;
+    padding: 16px;
+}
+/*    つけたし*/
+#contents1 {
+    position: relative;
+}
+
+p.new {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:rgba(0,200,20);
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    position: absolute;
+    font-size: 25px;
+    right: 16px;
+    top: 16px;
+    font-family: 'Indie Flower', cursive;
+
+}
+/*    つけたし*/
+
+.top-title {
+    font-size: 36px;
+    padding-left: 8px;
+    margin-bottom: 16px;
+    color: royalblue;
+    font-weight: 400;
+    border-left: 6px solid #e63c35;
+}
+
+.right-box {
+    float: left;
+    width: 288px;
+    margin-left: 18px;
+}
+
+.left-box {
+    float: left;
+    width: 288px;
+    margin-right: 18px;
+}
+
+.content {
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+    overflow: hidden;
+}
+
+.content:last-child {
+    border-bottom: 0;
+}
+
+#main img {
+    float: left;
+}
+
+#main h2 {
+    color: #e63c35;
+}
+
+#main p {
+    margin-bottom: 16px;
+}
+/*
+#main a {
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 8px 32px;
+    background: #3B5998;
+    color: #f9f9f9;
+    border: 2px solid #3B5998;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#main a:hover {
+    background: #f9f9f9;
+    color: #3B5998;
+    border: 2px solid #3B5998;
+}
+*/
+#sidebar {
+    float: left;
+    width: 280px;
+    margin: 0px 12px;
+    background: #00BDFF;
+    padding: 8px;
+}
+
+#sidebar img {
+    margin-bottom: 16px;
+}
+
+#sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#sidebar p {
+    font-size: 16px;
+}
+
+.animation1{
+    position: relative;
+    width: 300px;
+    float: left;
+}
+
+#contents1 .animation1 .caption{
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 160px;
+    width: 260px;
+    -webkit-transition: all 0.3s;
+-o-transition: all 0.3s; 
+transition: all 0.3s;
+
+
+opacity: 0;
+}
+
+#contents1 .animation1 .caption h2{
+    color: #000;
+    font-size: 13px;
+}
+
+#contents1 .animation1 .caption h3{
+    color: #000;
+    font-size: 15px;
+}
+
+#contents1 .animation1:hover .caption{
+    -webkit-transform: translate(8px, 8px);
+    -ms-transform: translate(8px, 8px);
+    -o-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+    opacity: 1;
+}
+
+.animation2{
+    position: relative;
+    width: 300px;
+    float: left;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    perspective: 500;
+    
+    -webkit-perspective-origin: left;
+    -moz-perspective-origin: left;
+    -ms-perspective-origin: left;
+    perspective-origin: left;
+}
+#contents2 .animation2 .caption{
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 185px;
+    width: 100px;
+    -webkit-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    opacity: 0;
+
+    -webkit-transition: 0.4s, opacity 0.1s 0.3s;
+    -o-transition: 0.4s, opacity 0.1s 0.3s;
+    transition: 0.4s, opacity 0.1s 0.3s;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0 ;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+}
+#contents2 .animation2:hover .caption{
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: 0.4s, opacity 0.3s;
+    -o-transition: 0.4s, opacity 0.3s;
+    transition: 0.4s, opacity 0.3s;
+    opacity: 1;
+   
+}
+#contents2 .animation2 .caption h2{
+    
+    color: #000;
+    font-size: 13px;
+}
+#contents2 .animation2 .caption h3{
+    color: #000;
+    font-size: 15px;
+}
+
+
+
+#contents2 .animation2 img{
+
+-webkit-transition:  transform 0.4s;
+    -o-transition:  transform 0.4s;
+    transition: transform 0.4s;
+}
+
+#contents2 .animation2:hover img{
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
+    transform: translateX(25%);
+}
+
+#main a.fbbutton{
+    font-size: 16px;
+    color: #3B5998;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 30px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.fbbutton .edge{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none repeat scroll 0 0 #3B5998;
+}
+
+.fbbutton .edge1{
+    width: 1px;
+     -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    transition-duration: 0.2s;
+}
+
+.fbbutton .edge2{
+    height: 1px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+   transition-duration: 0.2s;
+}
+
+.fbbutton .edge3{
+    width: 1px;
+    left: auto;
+    right: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+   transition-duration: 0.2s;
+
+}
+   
+
+
+.fbbutton .edge4{
+    height: 1px;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+   transition-duration: 0.2s;
+}
+
+#main a.fbbutton:active{
+    background-color: #fff;
+    color: #fff;
+}
+
+a.fbbutton:hover .edge{
+    background-color: red;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.animation3{
+    position: relative;
+    width: 300px;
+    float: left;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    perspective: 500;
+    
+    overflow: hidden;
+    -webkit-perspective-origin: left;
+    -moz-perspective-origin: left;
+    -ms-perspective-origin: left;
+    perspective-origin: left;
+       
+    
+}
+
+#contents3 .animation3 .caption{
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 160px;
+    width: 260px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+
+}
+
+#contents3 .animation3:hover .caption{
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 160px;
+    width: 260px;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition-duration: 0.3s;
+
+}
+
+#contents3 .animation3 .caption h2{
+    
+    color: #000;
+    font-size: 13px;
+    
+}
+
+#contents3 .animation3 .caption h3{
+    color: #000;
+    font-size: 15px;
+    
+}
+
+.animation4{
+    position: relative;
+    width: 300px;
+    float: left;
+}
+
+#sidebar .animation4 .caption{
+    position: absolute;
+    padding: 20px;
+    background: #e63c35;
+    height: 135px;
+    width: 260px;
+    top:0%;
+    opacity: 0;
+    transition-duration: 6s;
+}
+
+#sidebar:hover .animation4 .caption{
+-webkit-transform: rotateY(720deg);
+-ms-transform: rotateY(720deg);
+-o-transform: rotateY(720deg);
+transform: rotateY(720deg);
+ opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
